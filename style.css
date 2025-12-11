@@ -54,6 +54,7 @@ h1 {
 .bio {
     line-height: 1.6;
     margin-bottom: 30px;
+    flex: 1;
 }
 
 .links a {
