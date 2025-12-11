@@ -6,6 +6,35 @@ body {
     color: #333;
 }
 
+.intro-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column-reverse;
+    }
+    
+    .profile-image {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 .container {
     max-width: 750px;
     margin: auto;
