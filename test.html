@@ -3,40 +3,269 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Case Study: PractIV</title>
+    <title>PractIV Case Study - Ruoxi Shang</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="container">
+        <!-- Back to home link -->
         <a href="index.html" class="back-link">← Back to home</a>
         
-        <h1>PractIV: An Advanced Modular Intravenous Training System</h1>
-        
-        <section class="project-detail">
-            <p>What began as an ambitious senior capstone project has grown into a game-changer for medical training. Developed in collaboration with the University of Washington Engineering Innovation in Health program and the Center for Research and Education in Simulation Technologies, PractIV is a modular intravenous (IV) training arm poised to revolutionize how healthcare professionals master peripheral IV insertion.
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>PractIV: Revolutionizing IV Training Through Realistic Simulation</h1>
+            <p class="subtitle">Developing a next-generation intravenous training arm that better prepares healthcare professionals for real-world clinical challenges</p>
+            <div class="hero-image">
+                <img src="practiv-hero.jpg" alt="PractIV training arm in use">
+            </div>
+        </section>
+
+        <!-- Project Details -->
+        <section class="project-details">
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <h4>Role</h4>
+                    <p>Lead Engineer & Researcher</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Timeline</h4>
+                    <p>Winter 2025 - Summer 2025</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Collaborators</h4>
+                    <p>Courtney Cho (HCDE), Engineering Innovation in Health Program, CREST</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Funding</h4>
+                    <p>Hollomon Health Innovation Challenge ($1,250), EIH Summer Incubator Program ($5,000)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Challenge -->
+        <section class="challenge">
+            <h2>The Challenge</h2>
+            <p>
+                Peripheral intravenous (IV) catheter insertion is one of the most common medical 
+                procedures performed in hospitals worldwide, yet first-attempt success rates among 
+                staff nurses can be as low as 44%. Failed attempts cause patient discomfort, treatment 
+                delays, and increased healthcare costs.
+            </p>
+            <p>
+                Current IV training models fall short in preparing clinicians for real-world challenges:
+            </p>
+            <ul>
+                <li><strong>Oversimplified anatomy</strong> makes veins unrealistically easy to identify</li>
+                <li><strong>Lack of tactile realism</strong> fails to replicate the feel of human tissue</li>
+                <li><strong>Limited diversity</strong> with models representing only lean, light-skinned males</li>
+                <li><strong>No complication simulation</strong> such as rolling veins or fragile tissue</li>
+            </ul>
+            <p>
+                These limitations mean that learners may become proficient in controlled environments 
+                yet remain underprepared for the variability and complexity of actual patient care.
+            </p>
+        </section>
+
+        <!-- Image Break -->
+        <div class="image-full">
+            <img src="current-trainers.jpg" alt="Current IV training models">
+            <p class="caption">Traditional IV training arms lack the realism needed for effective clinical preparation</p>
+        </div>
+
+        <!-- Our Solution -->
+        <section class="solution">
+            <h2>Our Solution</h2>
+            <p>
+                Working in collaboration with the University of Washington's Engineering Innovation 
+                in Health program and the Center for Research and Education in Simulation Technologies 
+                (CREST), we developed PractIV—a modular, anatomically accurate IV training arm that 
+                addresses the critical gaps in current training tools.
             </p>
             
-            <h2>Overview</h2>
-            <p>Peripheral intravenous (IV) catheter insertion is the process of placing a small plastic tube into a vein to deliver fluids and medications. It is one of the most common medical procedures performed in hospitals worldwide. Despite its prevalence, first-attempt success rates can be as low as 44% among staff nurses, with failed attempts causing patient discomfort, treatment delays, and increased healthcare costs. The ability to successfully perform IV insertion requires both technical skill and clinical judgment: practitioners must locate suitable veins through visual inspection and touch (palpation), assess patient-specific challenges, and execute the insertion with proper technique.
-            
-            Traditionally, healthcare students and professionals learn IV insertion using training devices called IV arm trainers. These are synthetic models that simulate a human arm with embedded tubes representing veins. While these trainers provide a safe environment for practice, many current models have significant limitations. They often make veins unrealistically easy to identify, lack the tactile realism of human tissue, represent only a narrow demographic (typically lean, light-skinned males), and cannot simulate the complications clinicians encounter in real patients, such as veins that roll under the skin or difficult anatomy in critically ill patients.
-            
-            PractIV was developed to address these gaps through a collaboration between the University of Washington's Engineering Innovation in Health program and the Center for Research and Education in Simulation Technologies (CREST). Starting as a senior capstone project, the work has evolved into a comprehensive effort to create a more realistic, adaptable training tool. By combining advanced manufacturing techniques with direct input from clinical experts, PractIV aims to better prepare healthcare professionals for the full range of challenges they will face when performing IV insertions on actual patients, ultimately improving both clinician confidence and patient outcomes.</p>
-            
-            <h2>Methodology</h2>
-            <p>PractIV was developed through an iterative, user-centered design process, incorporating direct feedback from nurses, clinicians, and simulation experts. The core structure consists of a 3D-printed thermoplastic polyurethane (TPU) lattice engineered to mimic human soft tissue compliance, designed using SolidWorks and nTop software. This lattice was based on anatomical data from the MoHSES™ female dataset to ensure dimensional accuracy and compatibility with full-body simulation systems.
-            
-            A removable silicone skin sleeve (cast using Smooth-On Ecoflex™ 00-30) replicates the feel and resistance of human skin during needle insertion. Embedded artificial veins—clear silicone tubing with a co-extruded blue outer layer—provide realistic visual and tactile cues for vein identification and palpation. The trainer includes a closed-loop pressurized fluid system (5–15 mmHg) that delivers blood flashback upon successful cannulation, simulating physiological feedback.
-            
-            The prototype underwent multiple design iterations informed by pilot testing with IV team nurses, anesthesiologists, and EMTs. Feedback guided refinements in vein positioning, skin compliance, and insertion realism. A formal usability study was then conducted with eight participants (five nurses, one surgeon, two simulation technicians) who evaluated both PractIV and a commercial IV trainer using the System Usability Scale (SUS) and structured questionnaires assessing anatomical fidelity, educational utility, and realism.</p>
-            
-            <h2>Results</h2>
-            <p>PractIV significantly outperformed the commercial trainer across multiple domains. It achieved a System Usability Scale (SUS) score of 73.61 (Acceptable range), compared to 49.72 for the commercial model (Usability Concerns). Participants rated PractIV substantially higher in educational utility, including its potential to train IV access to professional competence (p = 0.043) and likelihood of curriculum adoption (p = 0.031).
-                
-            In anatomical fidelity assessments, PractIV received significantly higher ratings for vein coloring (p = 0.0045), skin tone (p = 0.024), vein palpation realism (p = 0.031), needle insertion feedback (p = 0.016), and soft tissue compliance (p = 0.0003). The trainer's wrist and elbow mobility were also rated as more realistic than the commercial model (p = 0.031 and p = 0.0156, respectively). Notably, vein arrangement ratings were comparable between the two trainers (p = 0.8125), suggesting opportunity for future improvement in venous branching complexity.
-            
-            Qualitative feedback highlighted PractIV's durability, realistic flashback system, and joint articulation as key strengths. Participants valued its anatomical accuracy and the ability to practice proper vein stabilization techniques. These findings demonstrate that PractIV provides a more realistic, educationally valuable training experience that better prepares healthcare professionals for the challenges of clinical IV placement.</p>
+            <h3>Key Features</h3>
+            <div class="features-grid">
+                <div class="feature">
+                    <h4>Anatomically Accurate Design</h4>
+                    <p>Based on the MoHSES™ female dataset with realistic vein placement from hand to upper arm</p>
+                </div>
+                <div class="feature">
+                    <h4>Realistic Tactile Feedback</h4>
+                    <p>3D-printed TPU lattice structures that mimic human soft tissue compliance</p>
+                </div>
+                <div class="feature">
+                    <h4>Modular Silicone Skin</h4>
+                    <p>Replaceable and adaptable for different patient scenarios</p>
+                </div>
+                <div class="feature">
+                    <h4>Pressurized Fluid System</h4>
+                    <p>5-15 mmHg pressure that provides blood flashback upon successful cannulation</p>
+                </div>
+                <div class="feature">
+                    <h4>Rolling Vein Simulation</h4>
+                    <p>Teaches proper stabilization techniques for difficult veins</p>
+                </div>
+                <div class="feature">
+                    <h4>Full-Body Integration</h4>
+                    <p>Compatible with MoHSES™ simulation systems for immersive scenario-based training</p>
+                </div>
+            </div>
         </section>
+
+        <!-- Image Break -->
+        <div class="image-full">
+            <img src="practiv-features.jpg" alt="PractIV key features">
+            <p class="caption">PractIV's modular design allows for realistic training across diverse patient scenarios</p>
+        </div>
+
+        <!-- Development Process -->
+        <section class="process">
+            <h2>Development Process</h2>
+            
+            <div class="process-section">
+                <h3>User-Centered Design</h3>
+                <p>
+                    We conducted extensive interviews and observational studies with nurses, clinicians, 
+                    and trainees to understand the real challenges of IV insertion training. Through 
+                    cognitive task analysis, we mapped the decision-making and technical skills required 
+                    for successful IV placement.
+                </p>
+            </div>
+
+            <div class="process-section">
+                <h3>Iterative Prototyping</h3>
+                <p>The development involved multiple iterations informed by direct clinical feedback:</p>
+                <ol>
+                    <li>Early material testing to achieve realistic skin puncture forces (1.25-3.2 N)</li>
+                    <li>Lattice structure optimization using nTop software for tissue compliance</li>
+                    <li>Silicone formulation refinement (testing 4+ different recipes)</li>
+                    <li>Vein placement adjustments based on anatomical accuracy feedback</li>
+                    <li>Integration of pressurized fluid system for flashback simulation</li>
+                </ol>
+            </div>
+
+            <div class="process-section">
+                <h3>Advanced Manufacturing</h3>
+                <ul>
+                    <li>3D-printed TPU lattice core using Fused Filament Fabrication (FFF)</li>
+                    <li>Custom silicone casting with pigmented skin tones</li>
+                    <li>Co-extruded silicone veins with blue outer layer for visibility</li>
+                    <li>Modular assembly for easy maintenance and replacement</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Image Grid -->
+        <div class="image-grid">
+            <div class="grid-item">
+                <img src="prototype-1.jpg" alt="Early prototype">
+                <p class="caption">Early prototype iteration</p>
+            </div>
+            <div class="grid-item">
+                <img src="lattice-structure.jpg" alt="3D-printed lattice structure">
+                <p class="caption">3D-printed TPU lattice structure</p>
+            </div>
+            <div class="grid-item">
+                <img src="silicone-casting.jpg" alt="Silicone casting process">
+                <p class="caption">Silicone casting process</p>
+            </div>
+            <div class="grid-item">
+                <img src="final-assembly.jpg" alt="Final assembly">
+                <p class="caption">Final assembly</p>
+            </div>
+        </div>
+
+        <!-- Validation & Results -->
+        <section class="results">
+            <h2>Validation & Results</h2>
+            <p>
+                We conducted a formal usability study with 8 participants (5 nurses, 1 surgeon, 
+                2 simulation technicians) comparing PractIV against a leading commercial IV trainer.
+            </p>
+
+            <div class="results-grid">
+                <div class="result-item">
+                    <h3>System Usability</h3>
+                    <div class="stat">
+                        <span class="stat-number">73.61</span>
+                        <span class="stat-label">PractIV (Acceptable)</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">49.72</span>
+                        <span class="stat-label">Commercial (Usability Concerns)</span>
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <h3>Anatomical Fidelity</h3>
+                    <p>Significantly higher ratings for PractIV:</p>
+                    <ul>
+                        <li>Vein coloring realism: <strong>p = 0.0045</strong></li>
+                        <li>Skin tone realism: <strong>p = 0.024</strong></li>
+                        <li>Vein palpation fidelity: <strong>p = 0.031</strong></li>
+                        <li>Needle insertion feedback: <strong>p = 0.016</strong></li>
+                        <li>Soft tissue compliance: <strong>p = 0.0003</strong></li>
+                    </ul>
+                </div>
+
+                <div class="result-item">
+                    <h3>Educational Value</h3>
+                    <p>Participants rated PractIV significantly higher for:</p>
+                    <ul>
+                        <li>Potential to train to professional competence: <strong>p = 0.043</strong></li>
+                        <li>Likelihood of curriculum adoption: <strong>p = 0.031</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Break -->
+        <div class="image-full">
+            <img src="usability-testing.jpg" alt="Usability testing session">
+            <p class="caption">Clinical experts evaluating PractIV during usability testing</p>
+        </div>
+
+        <!-- Impact -->
+        <section class="impact">
+            <h2>Impact</h2>
+            <p>
+                PractIV demonstrates that combining advanced manufacturing techniques with user-centered 
+                design can produce training tools that better prepare healthcare professionals for 
+                real-world challenges. The significantly higher ratings across realism, usability, and 
+                educational value suggest that this approach can improve both clinician confidence and 
+                patient outcomes.
+            </p>
+
+            <h3>Key Achievements</h3>
+            <ul>
+                <li>Validated improvement over commercial trainers through formal usability testing</li>
+                <li>Successfully integrated modular design for adaptability and maintenance</li>
+                <li>Demonstrated feasibility of 3D-printed compliant structures for medical simulation</li>
+                <li>Created foundation for future expansion (additional skin tones, anatomical variations, pathological conditions)</li>
+            </ul>
+
+            <h3>Next Steps</h3>
+            <ul>
+                <li>Training effectiveness studies measuring learner performance outcomes</li>
+                <li>Expansion of anatomical variations and patient scenarios</li>
+                <li>Integration into team-based, full-body simulation environments</li>
+                <li>Commercialization pathway development</li>
+            </ul>
+        </section>
+
+        <!-- Final Image -->
+        <div class="image-full">
+            <img src="practiv-final.jpg" alt="Final PractIV prototype">
+            <p class="caption">The final PractIV prototype ready for clinical training</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="project-navigation">
+            <a href="project2.html" class="nav-link">← Previous Project</a>
+            <a href="index.html" class="nav-link">Back to Projects</a>
+            <a href="project3.html" class="nav-link">Next Project →</a>
+        </div>
+
     </div>
 </body>
 </html>
