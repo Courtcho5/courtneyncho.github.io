@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courtney Cho's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
     <div class="container">
-        <h1>Courtney Cho</h1>
-        <p class="subtitle">Bioengineering + Design Engineer</p>
+        <!-- Hero Section -->
+        <header class="hero">
+            <h1>Courtney Cho</h1>
+            <p class="subtitle">Bioengineering + Design Engineer</p>
+        </header>
 
+        <!-- About Section with Image -->
         <div class="intro-section">
             <section class="bio">
                 <p>
@@ -22,54 +26,116 @@
                 </p>
 
                 <div class="links">
-            <a href="https://www.linkedin.com/in/courtneyncho/" target="_blank">LinkedIn</a>
-            <a href="https://drive.google.com/file/d/1MQVvFm0LJjoefpik14E7QEW3tHXfQ7ur/view?usp=sharing" target="_blank">Resume</a>
-        </div>
-    
+                    <a href="https://www.linkedin.com/in/courtneyncho/" target="_blank" class="link-button">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://drive.google.com/file/d/1MQVvFm0LJjoefpik14E7QEW3tHXfQ7ur/view?usp=sharing" target="_blank" class="link-button">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
+                        </svg>
+                        Resume
+                    </a>
+                </div>
             </section>
 
             <div class="profile-image">
                 <img src="profile.JPG" alt="Courtney Cho">
             </div>
-
         </div>
 
-        
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <h2>Featured Projects</h2>
+            
+            <div class="projects">
+                <a href="test.html" class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Medical Simulation</span>
+                        <h3>PRACTIV: A Novel IV Arm Trainer</h3>
+                    </div>
+                    <p class="project-description">
+                        Engineered a modular IV training simulator with anatomically accurate vein placement, 
+                        realistic tactile feedback, and joint articulation. Integrated multi-tone skin models 
+                        and fluidics for dynamic cannulation practice; user testing confirmed superior fidelity 
+                        and training efficacy compared to commercial trainers.
+                    </p>
+                    <div class="project-skills">
+                        <span>SOLIDWORKS</span>
+                        <span>Product Development</span>
+                        <span>Market Analysis</span>
+                        <span>Human Factors</span>
+                    </div>
+                </a>
 
-        <h2>Features Projects</h2>
-        <section class = "projects">
-            <div class="project-card">
-                <h3><a href="test.html">PRACTIV: A Novel IV Arm Trainer</a></h3>
-                <p>Engineered a modular IV training simulator with anatomically accurate vein placement, realistic tactile feedback, and joint articulation. Integrated multi-tone skin models and fluidics for dynamic cannulation practice; user testing confirmed superior fidelity and training efficacy compared to commercial trainers. </p>
-                <p>Skills: SOLIDWORKS, Product Development, Market Analysis, Human Factors Engineering</p>
-            </div>
-
-            <div class="project-card">
-                <h3><a href="dementia-journal.html">REWIND: Dementia Technology</a></h3>
-                    <p>Developed an AI-driven tool to assist in dementia care by analyzing patient interactions and providing actionable insights for caregivers.</p>
-                    <p>Skills: AI/ML implementation, Python/HTML/CSS, data analysis, UX research</p>
+                <a href="dementia-journal.html" class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Healthcare AI</span>
+                        <h3>REWIND: Dementia Technology</h3>
+                    </div>
+                    <p class="project-description">
+                        Developed an AI-driven tool to assist in dementia care by analyzing patient 
+                        interactions and providing actionable insights for caregivers.
+                    </p>
+                    <div class="project-skills">
+                        <span>AI/ML</span>
+                        <span>Python/HTML/CSS</span>
+                        <span>Data Analysis</span>
+                        <span>UX Research</span>
+                    </div>
+                </a>
+                
+                <a href="project-toes.html" class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Robotics</span>
+                        <h3>Feet</h3>
+                    </div>
+                    <p class="project-description">
+                        Designing a robotic system to assist with mobility and rehabilitation, 
+                        integrating sensors and AI for responsive, adaptive movement.
+                    </p>
+                    <div class="project-skills">
+                        <span>Robotics Design</span>
+                        <span>Embedded Systems</span>
+                        <span>ROS</span>
+                        <span>Control Algorithms</span>
+                    </div>
+                </a>
             </div>
             
-            <div class="project-card">
-                <h3><a href="project-toes.html">Feet</a></h3>
-                    <p>Designing a robotic system to assist with mobility and rehabilitation, integrating sensors and AI for responsive, adaptive movement.</p>
-                    <p>Skills: Robotics design, embedded systems, ROS, control algorithm</p>
+            <div class="more-projects">
+                <a href="all-projects.html">View all projects →</a>
             </div>
-
         </section>
-        
-        <div class="more-projects">
-            <a href="all-projects.html">View all projects →</a>
-        </div>
 
-        <h2>News</h2>
-        <ul class="news">
-            <li><b>DEC 2025</b> - Published "DEVELOPMENT AND VERIFICATION OF A NOVEL PERIPHERAL INTRAVENOUS CATHETER TRAINING DEVICE" (Cho et al.) in Simulation in Healthcare</li>
-            <li><b>SEPT 2025</b> - Began my Master's degree in Bioengineering at Northeastern University!</li>
-            <li><b>JUN 2025</b> - Graduated from the University of Washington with a BS in Human Centered Design and Engineering!</li>
-            <li><b>MAR 2025</b> - Presented PRACTIV: A Novel IV Arm Trainer at the 2025 Holloman Innovation in Health Challenge</li>
-            <li><b>MAR 2025</b> - Published "CREATIVE STIMULI FOR MULTI-AGENT LLM BRAINSTORMING" (Shang et al.)</li>
-        </ul>
+        <!-- News Section -->
+        <section class="news-section">
+            <h2>News & Updates</h2>
+            <ul class="news">
+                <li>
+                    <span class="news-date">DEC 2025</span>
+                    <span class="news-content">Published "DEVELOPMENT AND VERIFICATION OF A NOVEL PERIPHERAL INTRAVENOUS CATHETER TRAINING DEVICE" (Cho et al.) in Simulation in Healthcare</span>
+                </li>
+                <li>
+                    <span class="news-date">SEP 2025</span>
+                    <span class="news-content">Began my Master's degree in Bioengineering at Northeastern University!</span>
+                </li>
+                <li>
+                    <span class="news-date">JUN 2025</span>
+                    <span class="news-content">Graduated from the University of Washington with a BS in Human Centered Design and Engineering!</span>
+                </li>
+                <li>
+                    <span class="news-date">MAR 2025</span>
+                    <span class="news-content">Presented PRACTIV: A Novel IV Arm Trainer at the 2025 Holloman Innovation in Health Challenge</span>
+                </li>
+                <li>
+                    <span class="news-date">MAR 2025</span>
+                    <span class="news-content">Published "CREATIVE STIMULI FOR MULTI-AGENT LLM BRAINSTORMING" (Shang et al.)</span>
+                </li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>

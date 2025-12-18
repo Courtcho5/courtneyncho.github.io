@@ -1,0 +1,200 @@
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 0 60px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero .subtitle {
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Link Buttons */
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+.link-button:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.link-button svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Projects Section */
+.projects-section {
+    margin-top: 80px;
+}
+
+.projects-section h2 {
+    margin-bottom: 40px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project-card {
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    display: block;
+}
+
+.project-card:hover {
+    border-color: #999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.project-header {
+    margin-bottom: 15px;
+}
+
+.project-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 0.8rem;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.project-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-description {
+    color: #555;
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.project-skills span {
+    padding: 5px 12px;
+    background-color: #fafafa;
+    color: #666;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+}
+
+/* News Section */
+.news-section {
+    margin-top: 80px;
+}
+
+.news-section h2 {
+    margin-bottom: 30px;
+}
+
+.news {
+    list-style: none;
+    padding: 0;
+}
+
+.news li {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.news li:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    font-weight: 600;
+    color: #1a1a1a;
+    min-width: 90px;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+}
+
+.news-content {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* More Projects Link */
+.more-projects {
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.more-projects a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+}
+
+.more-projects a:hover {
+    color: #000;
+    border-color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .news li {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .news-date {
+        min-width: auto;
+    }
+}
