@@ -404,12 +404,27 @@ section li {
 }
 
 a {
-    color: #333;
+    color: #667eea;
     text-decoration: none;
+    position: relative;
     transition: color 0.2s;
 }
 
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #667eea;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
 a:hover {
-    color: #667eea;
-    text-decoration: underline;
+    color: #4c51bf;
 }
