@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REWIND Case Study - Courtney Cho</title>
+    <link rel="stylesheet" href="casestudy.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to home</a>
+        
+        <section class="hero">
+            <h1>REWIND: AI-Powered Memory Support for Dementia Care</h1>
+            <p class="subtitle">Developing an intelligent journaling and assessment tool that helps dementia patients maintain cognitive function through personalized memory exercises</p>
+            <div class="hero-image">
+                <img src="rewind-hero.jpg" alt="REWIND Application">
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <h4>Role</h4>
+                    <p>Full-Stack Developer & UX Designer</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Timeline</h4>
+                    <p>Fall 2024 - Spring 2025</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Technologies</h4>
+                    <p>Python, Flask, Firebase, Google AI (Gemini), HTML/CSS</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Team</h4>
+                    <p>Independent Project</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="challenge">
+            <h2>The Challenge</h2>
+            <p>
+                Dementia affects over 55 million people worldwide, with numbers projected to triple by 2050. 
+                While memory loss is progressive, research shows that regular cognitive exercises and memory 
+                retrieval practice can help slow decline and improve quality of life for patients.
+            </p>
+            <p>
+                Current memory support tools face critical limitations:
+            </p>
+            <ul>
+                <li><strong>Generic exercises</strong> that don't connect to patients' personal experiences and memories</li>
+                <li><strong>Lack of personalization</strong> making it difficult for patients to engage meaningfully</li>
+                <li><strong>No adaptive difficulty</strong> to match patients' changing cognitive abilities</li>
+                <li><strong>Poor caregiver visibility</strong> into patient progress and memory retention</li>
+            </ul>
+            <p>
+                These gaps mean that patients often lose interest in cognitive exercises, and caregivers lack 
+                the data needed to provide informed support and track disease progression.
+            </p>
+        </section>
+
+        <div class="image-full">
+            <div class="image-placeholder">[Image: Current memory support tools]</div>
+            <p class="caption">Traditional memory exercises lack personal relevance and adaptive difficulty</p>
+        </div>
+
+        <section class="solution">
+            <h2>Our Solution</h2>
+            <p>
+                REWIND combines daily journaling with AI-generated memory quizzes to create a personalized 
+                cognitive exercise system. By using patients' own diary entries as the basis for recall 
+                questions, the tool makes memory practice more engaging and meaningful while providing 
+                caregivers with actionable insights.
+            </p>
+            
+            <h3>Key Features</h3>
+            <div class="features-grid">
+                <div class="feature">
+                    <h4>Personal Diary System</h4>
+                    <p>Simple, accessible interface for patients to record daily experiences and thoughts</p>
+                </div>
+                <div class="feature">
+                    <h4>AI-Generated Quizzes</h4>
+                    <p>Google Gemini AI creates personalized memory questions based on diary entries</p>
+                </div>
+                <div class="feature">
+                    <h4>Adaptive Difficulty Levels</h4>
+                    <p>Four difficulty settings targeting different time periods (1 week to 3 months)</p>
+                </div>
+                <div class="feature">
+                    <h4>Progress Tracking</h4>
+                    <p>Comprehensive analytics showing quiz performance and memory retention over time</p>
+                </div>
+                <div class="feature">
+                    <h4>Secure Cloud Storage</h4>
+                    <p>Firebase integration ensures patient data is safely stored and accessible</p>
+                </div>
+                <div class="feature">
+                    <h4>Caregiver Dashboard</h4>
+                    <p>Planned feature for clinicians to monitor patient progress and cognitive trends</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="image-full">
+            <div class="image-placeholder">[Image: REWIND application interface]</div>
+            <p class="caption">Clean, accessible interface designed for ease of use by dementia patients</p>
+        </div>
+
+        <section class="process">
+            <h2>Development Process</h2>
+            
+            <div class="process-section">
+                <h3>User-Centered Design Approach</h3>
+                <p>
+                    The design prioritized simplicity and clarity, recognizing that dementia patients may 
+                    experience confusion or difficulty with complex interfaces. Large text, high contrast 
+                    colors, and straightforward navigation were essential design principles throughout 
+                    development.
+                </p>
+            </div>
+
+            <div class="process-section">
+                <h3>Technical Architecture</h3>
+                <p>The application was built using a modern web stack optimized for rapid development and scalability:</p>
+                <ol>
+                    <li><strong>Flask backend</strong> providing lightweight, flexible server-side logic</li>
+                    <li><strong>Firebase Authentication</strong> for secure user management</li>
+                    <li><strong>Firestore database</strong> storing diary entries and quiz results</li>
+                    <li><strong>Google Gemini AI integration</strong> generating contextual quiz questions</li>
+                    <li><strong>Responsive frontend</strong> ensuring accessibility across devices</li>
+                </ol>
+            </div>
+
+            <div class="process-section">
+                <h3>AI Integration Strategy</h3>
+                <p>
+                    The core innovation was connecting personal diary entries to AI-generated memory assessment. 
+                    The system retrieves entries within a specified timeframe, sends them to Google's Gemini API 
+                    with carefully crafted prompts, and receives back personalized quiz questions that test recall 
+                    of specific details and experiences.
+                </p>
+            </div>
+        </section>
+
+        <div class="image-grid">
+            <div class="grid-item">
+                <div class="image-placeholder">[Diary entry interface]</div>
+                <p class="caption">Simple diary entry form</p>
+            </div>
+            <div class="grid-item">
+                <div class="image-placeholder">[Difficulty selection]</div>
+                <p class="caption">Adaptive difficulty options</p>
+            </div>
+            <div class="grid-item">
+                <div class="image-placeholder">[Quiz interface]</div>
+                <p class="caption">AI-generated quiz questions</p>
+            </div>
+            <div class="grid-item">
+                <div class="image-placeholder">[Progress dashboard]</div>
+                <p class="caption">Performance tracking</p>
+            </div>
+        </div>
+
+        <section class="results">
+            <h2>Technical Achievements</h2>
+            <p>
+                The REWIND platform successfully demonstrates the potential of combining AI with healthcare 
+                applications to create meaningful patient interventions.
+            </p>
+
+            <div class="results-grid">
+                <div class="result-item">
+                    <h3>System Capabilities</h3>
+                    <ul>
+                        <li>Secure user authentication and data storage</li>
+                        <li>Dynamic quiz generation from personal content</li>
+                        <li>Scalable cloud architecture</li>
+                        <li>Responsive, accessible interface</li>
+                    </ul>
+                </div>
+
+                <div class="result-item">
+                    <h3>Technical Stack</h3>
+                    <ul>
+                        <li><strong>Backend:</strong> Python, Flask</li>
+                        <li><strong>Database:</strong> Firebase Firestore</li>
+                        <li><strong>AI:</strong> Google Gemini API</li>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="result-item">
+                    <h3>Key Learnings</h3>
+                    <ul>
+                        <li>API integration and prompt engineering</li>
+                        <li>Healthcare-focused UX design principles</li>
+                        <li>Full-stack web development</li>
+                        <li>Cloud database management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="image-full">
+            <div class="image-placeholder">[Image: System architecture diagram]</div>
+            <p class="caption">REWIND's architecture connecting diary entries, AI processing, and user assessment</p>
+        </div>
+
+        <section class="impact">
+            <h2>Impact & Future Directions</h2>
+            <p>
+                REWIND demonstrates how AI can be thoughtfully applied to healthcare challenges, creating 
+                tools that are both technically sophisticated and genuinely useful for vulnerable populations. 
+                By personalizing cognitive exercises through patients' own experiences, the platform offers 
+                a more engaging approach to memory maintenance than traditional generic exercises.
+            </p>
+
+            <h3>Key Achievements</h3>
+            <ul>
+                <li>Built a functional full-stack web application from concept to deployment</li>
+                <li>Successfully integrated Google's Gemini AI for natural language processing</li>
+                <li>Designed an accessible interface prioritizing dementia patient needs</li>
+                <li>Created a scalable architecture supporting future multi-user deployment</li>
+            </ul>
+
+            <h3>Next Steps</h3>
+            <ul>
+                <li>Implement caregiver dashboard for clinician access to patient progress</li>
+                <li>Conduct user testing with dementia patients and caregivers</li>
+                <li>Develop mobile application for increased accessibility</li>
+                <li>Add data visualization for tracking cognitive trends over time</li>
+                <li>Explore integration with electronic health records (EHR) systems</li>
+            </ul>
+        </section>
+
+        <div class="image-full">
+            <div class="image-placeholder">[Image: REWIND in use]</div>
+            <p class="caption">REWIND helping dementia patients maintain cognitive function through personalized memory practice</p>
+        </div>
+
+        <div class="project-navigation">
+            <a href="test.html" class="nav-link">← Previous Project</a>
+            <a href="index.html" class="nav-link">Back to Projects</a>
+            <a href="project-toes.html" class="nav-link">Next Project →</a>
+        </div>
+
+    </div>
+</body>
+</html>
