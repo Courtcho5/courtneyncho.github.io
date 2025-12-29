@@ -272,6 +272,16 @@ body {
         margin: 0 auto;
     }
 
+   .logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+
     .news li {
         flex-direction: column;
         gap: 5px;
