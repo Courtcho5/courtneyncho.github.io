@@ -37,6 +37,15 @@ body {
     font-weight: 400;
 }
 
+.logo-image {
+    width: 20px;
+    height: auto;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Intro Section */
 .intro-section {
     display: flex;
@@ -290,15 +299,6 @@ body {
         font-size: 0.8rem;
         padding: 4px 10px;
     }
-}
-
-.logo-image {
-    width: 20px;
-    height: auto;
-    margin-bottom: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Skills Showcase Section */
