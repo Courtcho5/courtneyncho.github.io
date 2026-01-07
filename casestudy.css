@@ -427,4 +427,5 @@ a:hover::after {
 
 a:hover {
     color: #4c51bf;
+    text-decoration: underline;
 }
