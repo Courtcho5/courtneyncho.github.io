@@ -31,6 +31,10 @@ body {
     color: #000;
 }
 
+.back-link::after {
+    display: none;
+}
+
 /* Hero Section */
 .hero {
     margin-bottom: 60px;
