@@ -288,6 +288,12 @@ section li {
     margin-top: 10px;
 }
 
+.image-smaller {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Results Section */
 .results-grid {
     display: grid;
