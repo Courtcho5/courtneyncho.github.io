@@ -415,7 +415,7 @@ section li {
 }
 
 a {
-    color: #667eea;
+    color: #333;
     text-decoration: none;
     position: relative;
     transition: color 0.2s;
@@ -426,6 +426,6 @@ a:hover::after {
 }
 
 a:hover {
-    color: #4c51bf;
+    color: #333;
     text-decoration: underline;
 }
